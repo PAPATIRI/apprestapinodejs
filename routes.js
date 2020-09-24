@@ -4,5 +4,8 @@ module.exports = function (app) {
     const jsonku = require('./controller');
 
     app.route('/')
-        .get(jsonku.index)
+        .get(jsonku.index);
+
+    app.route('/tampil')
+        .get(jsonku.tampildatamahasiswa);
 }
