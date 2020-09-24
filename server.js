@@ -9,6 +9,10 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json())
 
+// panggil routes
+const routes = require('./routes');
+routes(app);
+
 app.listen(port, () => {
     console.log('server telah dijalankan');
 })
